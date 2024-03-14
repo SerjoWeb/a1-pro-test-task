@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ChooseItem from "@/components/shared/ChooseItem";
 
 export default function Home() {
@@ -51,6 +52,22 @@ export default function Home() {
           <h3 className="text-xl font-semibold">Решение</h3>
           <div className="mt-4">
             <ChooseItem />
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-y-4">
+        <div>
+          <h2 className="text-2xl font-semibold">Задача 3. Страница игры на Next.js</h2>
+          <p className="text-lg">Напишите Next.js-приложение, которое будет отображать страницы с информацией по каждой из игр.</p>
+        </div>
+        
+        <div>
+          <h3 className="text-xl font-semibold">Решение</h3>
+          <div className="mt-4">
+            <Link href="/games" className="text-blue transition-all duration-500 hover:opacity-75">
+              Games
+            </Link>
           </div>
         </div>
       </div>
